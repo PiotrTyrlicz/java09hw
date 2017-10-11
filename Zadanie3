@@ -1,0 +1,7 @@
+a) Wyjątki	dzielimy	na	KONTROLOWANE które	trzeba	obsłużyć	i	NIEKONTROLOWANE które	można,	ale	nie	trzeba	obsłużyć.
+b) Wyjątki	NIEKONTROLOWANE dziedziczą	po	klasie	RuntimeException
+c) Wyjątki	rzucamy	korzystając	z	instrukcji	THROW,	jeśli	rzucamy	wyjątek	kontrolowany
+musimy	dodatkowo	w	sygnaturze	metody/konstruktora	zadeklarować	wyjątek
+używając	słowa	THROWS
+d) Do	bloku	try-catch	możemy	dodać	dodatkowo	blok	FINALLY,	który	wykona	się	zawsze,
+niezależnie,	czy	w	bloku	try	wyjątek	wystąpił,	czy	nie
