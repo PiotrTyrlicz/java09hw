@@ -1,8 +1,15 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         System.out.println("Start programu");
+
+            // ZADANIE 1
+
         Scanner scan1=new Scanner(System.in);
         System.out.println("Podaj imie");
         String imie=scan1.nextLine();
@@ -21,7 +28,6 @@ public class Test {
         }catch (IncorrectAgeException e){
             System.out.println("Cos nie tak z wiekiem");
         }
-
 
         System.out.println("Koniec programu");
     }
