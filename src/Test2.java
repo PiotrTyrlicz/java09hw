@@ -14,7 +14,8 @@ public class Test2 {
             fileWriter = new FileWriter("tekst.txt");
             BufferedWriter bfw = new BufferedWriter(fileWriter);
             System.out.println("Podaj ile liczb chcesz wprowadzic");
-            int ilosc=scan1.nextInt();
+            int ilosc;
+            ilosc=scan1.nextInt();
             double[] tab=new double[ilosc];
             for(int i=0; i<ilosc; i++){
                 System.out.println("Podaj liczbe");
@@ -24,8 +25,14 @@ public class Test2 {
                 bfw.newLine();
             }
             bfw.close();
-        } catch (IOException e) {
+        } catch (IOException  ex) {
             System.out.println("Cos");
         }
+//          catch (InputMismatchException  ex) {
+//            System.out.println("Cos");
+//        }
+
+
+
     }
 }
