@@ -1,6 +1,7 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Test2 {
@@ -25,12 +26,10 @@ public class Test2 {
                 bfw.newLine();
             }
             bfw.close();
-        } catch (IOException  ex) {
-            System.out.println("Cos");
+        } catch (IOException | InputMismatchException ex) {
+            System.out.println("Wprowadziles bledne dane");
         }
-//          catch (InputMismatchException  ex) {
-//            System.out.println("Cos");
-//        }
+
 
 
 
